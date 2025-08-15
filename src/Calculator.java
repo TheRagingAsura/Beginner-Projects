@@ -1,5 +1,3 @@
-package src;
-
 import java.util.Scanner;
 
 public class Calculator {
@@ -15,14 +13,36 @@ public class Calculator {
 
         int selection = scanner.nextInt();
         while (selection != 5){
+
             if (selection == 1) {
                 System.out.print("Enter first number: ");
                 int a = scanner.nextInt();
                 System.out.print("Enter second number: ");
                 int b = scanner.nextInt();
                 System.out.println("the total is " + (a + b));
-                //user input needed for next selection/exiting the calc
+            } else if (selection == 2) {
+                System.out.print("Enter first number: ");
+                int a = scanner.nextInt();
+                System.out.print("Enter second number: ");
+                int b = scanner.nextInt();
+                System.out.println("the total is " + (a - b));
+            } else if (selection == 3) {
+                System.out.print("Enter first number: ");
+                int a = scanner.nextInt();
+                System.out.print("Enter second number: ");
+                int b = scanner.nextInt();
+                System.out.println("the total is " + (a * b));
+            } else if (selection == 4) {
+                System.out.print("Enter first number: ");
+                int a = scanner.nextInt();
+                System.out.print("Enter second number: ");
+                int b = scanner.nextInt();
+                System.out.println("the total is " + (a / b));
             }
+
+            System.out.println("Select the next option or 5 to exit the program");
+            selection = scanner.nextInt();
+
         }
 
 
